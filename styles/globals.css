@@ -1,16 +1,24 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@layer components {
+  .headerLink {
+    @apply text-[#434343] hover:text-green-500 transition duration-200;
+  }
+  .footerSmLink {
+    @apply flex items-center justify-between border-b-[1px] border-[#bbbbbb] px-[6%] py-4 tracking-wide hover:text-gray-500 transition duration-100 cursor-pointer;
+  }
+  .footerArrowIcon {
+    @apply cursor-pointer text-xl;
+  }
+  .footerSocial {
+    @apply text-2xl hover:text-green-500 transition duration-100;
+  }
+  .footerLink {
+    @apply pt-10 whitespace-nowrap flex flex-col gap-y-1 w-[250px] text-sm;
+  }
+  .footerLinks {
+    @apply text-sm hover:text-green-500 text-gray-900 transition duration-100;
+  }
 }
