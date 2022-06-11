@@ -1,6 +1,7 @@
 import { BsSearch } from "react-icons/Bs";
 import { FiUser } from "react-icons/Fi";
 import Link from "next/link";
+
 function Header() {
   return (
     <header className="flex tracking-wide items-center px-4 py-2 font-one justify-between">
