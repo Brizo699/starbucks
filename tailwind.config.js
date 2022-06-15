@@ -1,5 +1,3 @@
-const { Main } = require("next/document");
-
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -12,7 +10,7 @@ module.exports = {
       two: ["Cabinet Grotesk", "sans-serif"],
       three: ["Excon", "sans-serif"],
       four: ["Switzer", "sans-serif"],
-      five: ["Britney", "sans-serif"],
+      britney: ["Britney", "sans-serif"],
     },
   },
   plugins: [],

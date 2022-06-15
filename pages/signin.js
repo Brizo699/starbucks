@@ -2,6 +2,7 @@ import { FcGoogle } from "react-icons/Fc";
 import { AiFillFacebook } from "react-icons/Ai";
 import Head from "next/head";
 import Image from "next/image";
+import { useSession, signIn, signOut } from "next-auth/react";
 
 function Signin() {
   return (
@@ -79,7 +80,14 @@ function Signin() {
               </button>
               <h1>OR</h1>
               <div className="flex w-full space-x-2">
-                <div className="flex items-center border-[1px] border-gray-300 rounded-lg px-2 w-full py-3 hover:bg-[#f5f5f5] transition duration-100 cursor-pointer">
+                <div
+                  className="flex items-center border-[1px] border-gray-300 rounded-lg px-2 w-full py-3 hover:bg-[#f5f5f5] transition duration-100 cursor-pointer"
+                  onClick={() =>
+                    signIn("google", {
+                      callbackUrl: "/homepage",
+                    })
+                  }
+                >
                   <FcGoogle />
                   <button className="text-xs px-1 tracking-wide">
                     Sign up with Google
