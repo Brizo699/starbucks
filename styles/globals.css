@@ -4,21 +4,33 @@
 
 @layer components {
   .headerLink {
-    @apply text-[#434343] hover:text-green-500 transition duration-200;
+    @apply text-[#434343] bg-clip-text hover:text-transparent hover:bg-gradient-to-bl hover:from-[rgb(27,203,130)] hover:to-[#4f4f4f] font-medium;
+  }
+  .landingButtons {
+    @apply tracking-wide  rounded-full px-4 py-1 border-[1px] transition duration-100;
+  }
+  .previewButtons {
+    @apply border-green-800 text-sm bg-white text-green-800 hover:bg-green-800 hover:text-white border-[1px] px-3 py-1 rounded-full transition duration-100 mt-4 mb-4 md:mb-0;
   }
   .footerSmLink {
-    @apply flex items-center justify-between border-b-[1px] border-[#bbbbbb] px-[6%] py-4 tracking-wide hover:text-gray-500 transition duration-100 cursor-pointer;
+    @apply flex items-center justify-between border-b-[1px] border-[#bbbbbb] px-[6%] py-4 tracking-wide hover:text-gray-600 transition duration-100 cursor-pointer;
   }
   .footerArrowIcon {
     @apply cursor-pointer text-xl;
   }
-  .footerSocial {
-    @apply text-2xl hover:text-green-500 transition duration-100;
+  .footerIconContainer {
+    @apply bg-black p-2 text-white rounded-full  text-xl hover:bg-gradient-to-bl hover:from-[#1bcb82] hover:to-[#0e0e0e] hover:text-white transition duration-200;
   }
   .footerLink {
     @apply pt-10 whitespace-nowrap flex flex-col gap-y-1 w-[250px] text-sm;
   }
   .footerLinks {
-    @apply text-sm hover:text-green-500 text-gray-900 transition duration-100;
+    @apply text-sm hover:text-green-600 text-gray-900 transition duration-100;
+  }
+  .footerLg {
+    @apply pt-10 whitespace-nowrap flex flex-col gap-y-2 w-[250px] text-sm;
+  }
+  .footerlgH1 {
+    @apply text-xl font-normal;
   }
 }

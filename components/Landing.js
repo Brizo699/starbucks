@@ -1,28 +1,18 @@
 function Landing() {
   return (
-    <span className="flex h-[calc(100vh-250px)] relative justify-center font-three tracking-wide">
-      <img
-        className="h-full w-full object-cover"
-        src="https://bit.ly/3tq0MLr"
-      />
-      <div className="absolute flex h-full w-full font-bold px-10 py-2 text-3xl text-white flex-col space-y">
-        <h1 className="font-bold pt-4 text-3xl ">
-          it's not just Coffee it's
-          <a
-            herf=""
-            className="bg-clip-text text-transparent bg-gradient-to-bl from-[#238e61] to-[#036635] font-bold text-4xl ml-3 "
-          >
-            STARBUCKS
-          </a>
-        </h1>
-        <div className="text-white font-normal font-one text-xl w-3/5">
-          <p>
-            We're working hard to put the health and well-being of ur partner
-            and custmers first in all that we do.
-          </p>
-        </div>
+    <div className="bg-[#d4e9e2] h-[60vh] md:h-[40vh] flex justify-center items-center flex-col md:flex-row md:justify-between tracking-wide font-three ">
+      <div className="md:w-[50%]">
+        <img src="https://bit.ly/3xpZRMb" alt="" width="100%" />
       </div>
-    </span>
+      <div className="flex flex-col md:w-[50%] items-center text-center text-2xl px-10 space-y-3 text-green-800">
+        <h1 className="lg:text-3xl">
+          The new Starbucks® Summer Game: Road to Paradise is here.
+        </h1>
+        <button className="landingButtons border-green-800 text-lg lg:text-xl bg-white text-green-800 hover:bg-green-800 hover:text-white ">
+          Learn More
+        </button>
+      </div>
+    </div>
   );
 }
 
