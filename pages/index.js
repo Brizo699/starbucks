@@ -1,13 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
-import Header from "../components/Header";
-
-import Footer from "../components/Footer";
 import Landing from "../components/Landing";
 import Landing2 from "../components/Landing2";
 import Landing3 from "../components/Landing3";
 import Preview from "../components/Preview";
 import Content from "../components/Content";
+import Slider from "../components/Slider";
 
 export default function Home() {
   return (
@@ -27,20 +24,68 @@ export default function Home() {
         <div className="py-9 bg-[#efefef] space-y-5">
           <Content
             contentImg="https://bit.ly/3MKqK33"
-            contentH1="Starbucks® Rewards "
+            contentH1="Starbucks® Rewards 🌟 "
             contentP1="Summer season is here and so is our handcrafted Strawberry Acai Starbucks Refresha® Drink."
             contentP2="Order on the Starbucks® UK App for a speedy pick up. "
             contentButtons="Order now"
           />
           <Content
             contentImg="https://bit.ly/3xQyLPN"
-            contentH1="Starbucks® Delivers"
+            contentH1="Starbucks® Delivers 🌟 "
             contentP1="You're one tap away from trying the Iced Brown Sugar Oat Shaken Espresso."
             contentP2="Get it delivered straight to your door with Starbucks® Delivers."
             contentButtons="Order now"
           />
         </div>
         <Preview />
+        <h1 className=" bg-[#efefef] flex justify-center text-5xl font-britney pt-14">
+          Choose Your Coffee
+        </h1>
+        <div className="slider flex bg-[#efefef] py-14 px-3 space-x-3 ">
+          <Slider
+            sliderImg="https://bit.ly/3zGcIMM"
+            sliderH1="Chai Creme Frappuccino"
+            sliderPrice="$4.99"
+          />
+          <Slider
+            sliderImg="https://bit.ly/3aSuEtd"
+            sliderH1="White Chocolate Moche Frappuccino"
+            sliderPrice="$3.99"
+          />
+          <Slider
+            sliderImg="https://bit.ly/3xX2tlS"
+            sliderH1="Caramel Ribbon Crunch Frappuccino"
+            sliderPrice="$3.99"
+          />
+          <Slider
+            sliderImg="https://bit.ly/3QmZbjh"
+            sliderH1="Choco Vanilla Frappuccino"
+            sliderPrice="$4.99"
+          />
+
+          <Slider
+            sliderImg="https://bit.ly/3tEZuMA"
+            sliderH1="Diy Frappuccino"
+            sliderPrice="$4.99"
+          />
+          <Slider
+            sliderImg="https://bit.ly/3xWzXBd"
+            sliderH1="Chocolate Chau Creme Mocha "
+            sliderPrice="$5.99"
+          />
+          <Slider
+            sliderImg="https://bit.ly/3zFOeDr"
+            sliderH1="Black And White Mocha Frappuccino"
+            sliderPrice="$4.99"
+          />
+          <Slider
+            sliderImg="https://bit.ly/3zGB1dp"
+            sliderH1="Mocha Cookie Crumble"
+            sliderPrice="$5.99"
+          />
+
+          {/* a few more image  */}
+        </div>
       </main>
     </div>
   );

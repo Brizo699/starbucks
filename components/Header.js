@@ -22,7 +22,7 @@ function Header() {
           </Link>
         </div>
         <div className="space-x-3 pl-10 lg:block hidden text-lg ">
-          <Link href="/signin">
+          <Link href="/menu">
             <a className="headerLink">Menu</a>
           </Link>
           <a className="headerLink" href="">

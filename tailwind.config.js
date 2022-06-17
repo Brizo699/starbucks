@@ -13,5 +13,5 @@ module.exports = {
       britney: ["Britney", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
