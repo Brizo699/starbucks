@@ -2,9 +2,9 @@ import Image from "next/image";
 function Landing2() {
   return (
     <div className="flex flex-col bg-[#F06464] text-white font-three tracking-wide md:flex-row-reverse h-full w-full items-center justify-center ">
-      <div className="md:w-[50%] ">
+      <div className="md:w-[50%] overflow-hidden">
         <img
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain hover:scale-105 transition duration-200"
           src="https://bit.ly/3HltGSH"
           alt=""
         />

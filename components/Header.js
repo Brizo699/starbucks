@@ -21,14 +21,14 @@ function Header() {
             </a>
           </Link>
         </div>
-        <div className="space-x-3 pl-10 lg:block hidden text-lg ">
+        <div className="space-x-3 pl-10 text-lg ">
           <Link href="/menu">
-            <a className="headerLink">Menu</a>
+            <a className="headerLink ">Menu</a>
           </Link>
-          <a className="headerLink" href="">
+          <a className="headerLink lg:block hidden " href="">
             Rewards
           </a>
-          <a className="headerLink" href="">
+          <a className="headerLink lg:block hidden " href="">
             Gift Card
           </a>
         </div>

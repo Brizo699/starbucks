@@ -5,6 +5,9 @@ import Landing3 from "../components/Landing3";
 import Preview from "../components/Preview";
 import Content from "../components/Content";
 import Slider from "../components/Slider";
+import sliders from "../sliders";
+// import Cart from "../components/Cart";
+// import carts from "../carts";
 
 export default function Home() {
   return (
@@ -20,7 +23,6 @@ export default function Home() {
           <Landing />
           <Landing2 />
         </div>
-
         <div className="py-9 bg-[#efefef] space-y-5">
           <Content
             contentImg="https://bit.ly/3MKqK33"
@@ -42,50 +44,25 @@ export default function Home() {
           Choose Your Coffee
         </h1>
         <div className="slider flex bg-[#efefef] py-14 px-3 space-x-3 ">
-          <Slider
-            sliderImg="https://bit.ly/3zGcIMM"
-            sliderH1="Chai Creme Frappuccino"
-            sliderPrice="$4.99"
-          />
-          <Slider
-            sliderImg="https://bit.ly/3aSuEtd"
-            sliderH1="White Chocolate Moche Frappuccino"
-            sliderPrice="$3.99"
-          />
-          <Slider
-            sliderImg="https://bit.ly/3xX2tlS"
-            sliderH1="Caramel Ribbon Crunch Frappuccino"
-            sliderPrice="$3.99"
-          />
-          <Slider
-            sliderImg="https://bit.ly/3QmZbjh"
-            sliderH1="Choco Vanilla Frappuccino"
-            sliderPrice="$4.99"
-          />
-
-          <Slider
-            sliderImg="https://bit.ly/3tEZuMA"
-            sliderH1="Diy Frappuccino"
-            sliderPrice="$4.99"
-          />
-          <Slider
-            sliderImg="https://bit.ly/3xWzXBd"
-            sliderH1="Chocolate Chau Creme Mocha "
-            sliderPrice="$5.99"
-          />
-          <Slider
-            sliderImg="https://bit.ly/3zFOeDr"
-            sliderH1="Black And White Mocha Frappuccino"
-            sliderPrice="$4.99"
-          />
-          <Slider
-            sliderImg="https://bit.ly/3zGB1dp"
-            sliderH1="Mocha Cookie Crumble"
-            sliderPrice="$5.99"
-          />
-
-          {/* a few more image  */}
+          {sliders.map(({ sliderH1, sliderImg, sliderPrice }, index) => (
+            <Slider
+              key={index}
+              sliderImg={sliderImg}
+              sliderH1={sliderH1}
+              sliderPrice={sliderPrice}
+            />
+          ))}
         </div>
+        {/* <div>
+          {carts.map(({ cartH1, cartImg, cartPrice }, index) => (
+            <rt
+              key={index}
+              cartImg={cartImg}
+              cartH1={cartH1}
+              cartPrice={cartPrice}
+            />
+          ))}
+        </div> */}
       </main>
     </div>
   );
