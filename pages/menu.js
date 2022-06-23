@@ -10,21 +10,7 @@ function Menu() {
           sliderH1="Caffee Americano"
           sliderPrice="$5.99"
         />
-        <Slider
-          sliderImg="https://bit.ly/39zgU6n"
-          sliderH1="Veranda Blend"
-          sliderPrice="$5.99"
-        />
-        <Slider
-          sliderImg="https://bit.ly/3NcEns4"
-          sliderH1="Dark Roasted"
-          sliderPrice="$5.99"
-        />
-        <Slider
-          sliderImg="https://bit.ly/3tGHYYn"
-          sliderH1="Pike Place `Roast"
-          sliderPrice="$5.99"
-        />
+
         <Slider
           sliderImg="https://bit.ly/3xG7DBs"
           sliderH1="Decaf Pike Place Roast"
@@ -90,22 +76,13 @@ function Menu() {
           sliderH1="Caramel Macchiato"
           sliderPrice="$5.99"
         />
-        <Slider
-          sliderImg="https://bit.ly/3Qs8Wgd"
-          sliderH1="Espresso Macchiato"
-          sliderPrice="$5.99"
-        />
 
         <Slider
           sliderImg="https://bit.ly/3bbMKH0"
           sliderH1="Caffe Mocha"
           sliderPrice="$5.99"
         />
-        <Slider
-          sliderImg="https://bit.ly/39Cf6JO"
-          sliderH1="Starbucks Reserve Dark Chocolate Mocha"
-          sliderPrice="$5.99"
-        />
+
         <Slider
           sliderImg="https://bit.ly/39EIAqz"
           sliderH1="White Chocolate Mocha"
@@ -294,17 +271,7 @@ function Menu() {
         />
         <Slider
           sliderImg="https://bit.ly/3N2o94A"
-          sliderH1=""
-          sliderPrice="$5.99"
-        />
-        <Slider
-          sliderImg="https://bit.ly/3ban6lP"
-          sliderH1=""
-          sliderPrice="$5.99"
-        />
-        <Slider
-          sliderImg="https://bit.ly/3ObIaH4"
-          sliderH1="Mocha Frappucino"
+          sliderH1="Matcha Creme Frappuccino"
           sliderPrice="$5.99"
         />
       </div>
@@ -336,7 +303,11 @@ function Menu() {
           sliderH1="Vanilla Sweet Cream Nitro Cold Brew"
           sliderPrice="$5.99"
         />
-        <Slider sliderImg="https://bit.ly/3y7LZHI" sliderH1="" sliderPrice="" />
+        <Slider
+          sliderImg="https://bit.ly/3y7LZHI"
+          sliderH1="Iced Flat White"
+          sliderPrice=""
+        />
         <Slider
           sliderImg="https://bit.ly/3Nemuc1"
           sliderH1="Iced Honey Almondmilk Flat White"
@@ -347,10 +318,89 @@ function Menu() {
           sliderH1="Iced Cinnamon Dolce Latte"
           sliderPrice=""
         />
-        <Slider sliderImg="" sliderH1="" sliderPrice="" />
-        <Slider sliderImg="" sliderH1="" sliderPrice="" />
-        <Slider sliderImg="" sliderH1="" sliderPrice="" />
-        <Slider sliderImg="" sliderH1="" sliderPrice="" />
+        <Slider
+          sliderImg="https://bit.ly/3bdEnKV"
+          sliderH1="Iced Caramel Macchiato"
+          sliderPrice=""
+        />
+      </div>
+      {/* Iced Teas */}
+      <h1 className="text-3xl font-britney p-4 tracking-wide">Iced Teas</h1>
+      <div className="flex overflow-x-auto space-x-2">
+        <Slider
+          sliderImg="https://bit.ly/3HMklUc"
+          sliderH1="Teavana Sparkling Unsweetened Peach Nectarine Green Tea"
+          sliderPrice=""
+        />
+        <Slider
+          sliderImg="https://bit.ly/39MhH46"
+          sliderH1="Iced Black Tea"
+          sliderPrice=""
+        />
+        <Slider
+          sliderImg="https://bit.ly/3QH9b6S"
+          sliderH1="Iced London Fog Tea Latte"
+          sliderPrice=""
+        />
+        <Slider
+          sliderImg="https://bit.ly/3HKM7Aj"
+          sliderH1="Iced Chai Latte"
+          sliderPrice=""
+        />
+        <Slider
+          sliderImg="https://bit.ly/3OwBKCq"
+          sliderH1="Iced Matcha Tea Latte"
+          sliderPrice=""
+        />
+        <Slider
+          sliderImg="https://bit.ly/3zVMEgH"
+          sliderH1="Iced Green Tea Lemonade"
+          sliderPrice=""
+        />
+        <Slider
+          sliderImg="https://bit.ly/3n6lfBe"
+          sliderH1="Iced Passion Tango Tea Lemonade"
+          sliderPrice=""
+        />
+      </div>
+      {/* COLD DRINKS */}
+      <h1 className="text-3xl font-britney p-4 tracking-wide">Cold Drinks</h1>
+      <div className="flex overflow-x-auto space-x-2">
+        <Slider
+          sliderImg="https://bit.ly/3xNivNX"
+          sliderH1="Dragon Drink"
+          sliderPrice=""
+        />
+        <Slider
+          sliderImg="https://bit.ly/3n6nrZs"
+          sliderH1="Strawberry Acai Lemonade"
+          sliderPrice=""
+        />
+        <Slider
+          sliderImg="https://bit.ly/39IoxHV"
+          sliderH1="Pineapple Passionfruit "
+          sliderPrice=""
+        />
+        <Slider
+          sliderImg="https://bit.ly/3zRjhwd"
+          sliderH1="Pink Drink"
+          sliderPrice=""
+        />
+        <Slider
+          sliderImg="https://bit.ly/3zZMSDF"
+          sliderH1="Starbucks BAYA Energy Mango Guava"
+          sliderPrice=""
+        />
+        <Slider
+          sliderImg="https://bit.ly/3yamMMN"
+          sliderH1="Evolution Fresh Vital Berry"
+          sliderPrice=""
+        />
+        <Slider
+          sliderImg="https://bit.ly/3neU5YN"
+          sliderH1="Blended Strawberry Lemonade"
+          sliderPrice=""
+        />
       </div>
     </div>
   );
